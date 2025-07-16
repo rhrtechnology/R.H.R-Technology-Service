@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R.H.R Technology Service</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>R.H.R Technology Service</h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#booking">Book Now</a>
+      <a href="#" id="loginBtn">Login</a>
+      <a href="#" id="logoutBtn" class="hidden">Logout</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Powering Progress Through Technology</h2>
+    <p>Your trusted partner in KYC, cybersecurity, software development, and more.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are an innovative IT company delivering custom technology solutions, including secure KYC systems and scalable business tools.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>🌐 Website Development</li>
+      <li>🛠️ Custom Software Solutions</li>
+      <li>🔒 Cybersecurity & KYC Integration</li>
+      <li>☁️ Cloud Services</li>
+      <li>🛒 E-Commerce Development</li>
+      <li>💻 IT Support & Maintenance</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <blockquote>"Reliable and efficient tech team. Their KYC system saved us time and stress!" – Sarah T.</blockquote>
+    <blockquote>"Professional service with real impact. R.H.R is our go-to for IT needs." – Michael R.</blockquote>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Free Consultation</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Tell us what you need..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 R.H.R Technology Service | <a href="https://facebook.com/R.H.RTechnologyService" target="_blank">Facebook Page</a></p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal hidden" id="loginModal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h3>Admin Login</h3>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="submitLogin">Login</button>
+      <p id="loginError" class="error hidden">Invalid credentials</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
